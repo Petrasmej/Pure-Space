@@ -3,6 +3,8 @@
   --text: #4f5257;
   --background-1: #e9edf0;
   --background-2: #f2f2f2;
+  --background-meditation1: #F9FAFB;
+  --background-meditation3: #D9E2E8;
   --blue: #52748a;
   --white: white;
 }
@@ -14,6 +16,11 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+
+}
+
+section {
+  overflow: hidden;
 }
 
 a {
@@ -53,20 +60,19 @@ a {
 .nav-right nav {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .nav-right a {
   color: var(--text);
   text-decoration: none;
   margin-left: 20px;
+  padding: 10px 10px;
   transition: color 0.3s;
 }
 
 .nav-right a:hover {
   background-color: var(--blue);
   color: white;
-  padding: 10px 20px;
   border-radius: 50px;
 }
 
@@ -173,7 +179,6 @@ a {
 
 /* ====== SECTIONS ====== */
 .container {
-  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 100px 20px;
@@ -181,6 +186,12 @@ a {
 
 .info-text {
   text-align: left;
+}
+
+.info-text strong {
+  display: block;
+  margin-top: 10px;
+  /* Zvýší mezeru mezi <br /> a <strong> */
 }
 
 .cards {
@@ -445,6 +456,8 @@ footer {
 }
 
 
+
+
 /* TBA */
 .TBA {
   background-image: url("../notes.jpg");
@@ -465,4 +478,187 @@ footer {
   max-height: 200px;
   padding: 15px;
   border-radius: 15px;
+}
+
+
+
+
+/* Mindfulness */
+.mindfulness {
+  background-image: url("../public/mind-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.box-white {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.obsah-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.obsah-container a {
+  display: inline-block;
+  /* Prostor mezi odkazy */
+  text-decoration: none;
+  /* Odebrání podtržení */
+  font-weight: bold;
+  font-size: 1.17em;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.obsah-container a:hover {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 50px;
+}
+
+.klasik {
+  display: flex;
+  background: var(--background-meditation1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin: 3% 0px;
+}
+
+.klasik-left {
+  flex: 0 0 60%;
+  padding: 20px
+}
+
+.klasik-right {
+  flex: 0 0 40%;
+}
+
+.mindfulness-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.mindfulness-text {
+  margin-bottom: 10px;
+}
+
+.mindfulness-list {
+  padding: 20px;
+}
+
+.mindfulness-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.klasik-img {
+  width: 100%;
+  height: 33%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.meditation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meditation-item {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.meditation-item.expanded {
+  background-color: var(--background-meditation3);
+  /* Světle modrá při rozbalení */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meditation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meditation-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 75px;
+  height: 25px;
+}
+
+.meditation-short {
+  margin-top: 8px;
+}
+
+.meditation-long {
+  margin-top: 10px;
+  padding: 0 0 20px 20px;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.next {
+  margin-top: 40px;
+}
+
+.headlineMedit {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .mindfulness {
+    height: 100%;
+  }
+
+
+  .klasik-right {
+    display: none;
+  }
+
+  .klasik-left {
+    flex: 0 0 100%;
+    padding: 20px
+  }
+
+  .meditation-short {
+    padding-right: 10px;
+  }
+
+  .meditation-long {
+    padding-right: 10px;
+  }
 }

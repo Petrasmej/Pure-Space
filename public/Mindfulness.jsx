@@ -53,19 +53,11 @@ const Mindfulness = () => {
         <div className="container">
           <h2>Kategorie</h2>
           <p className="info-text">
-            <strong>
-              Vyberte si oblast, která vás zajímá, a objevte různé praktiky,
-              které můžete začlenit do svého života.
-            </strong>
             Mindfulness zahrnuje široké spektrum praktik, které pomáhají
             posilovat pozornost, regulovat emoce a snižovat stres. Můžete si
             vybrat, co vám nejlépe vyhovuje – od meditace přes pohyb až po běžné
-            činnosti. Nejtěžší částí je často samotný začátek – sebrat odvahu a
-            najít si čas na vyzkoušení těchto technik. Mnozí z nás mají tendenci
-            zůstávat v komfortní zóně, kde stres a napětí jednoduše ignorujeme.
-            Jakmile však zjistíte, jak moc vám mindfulness může pomoci, začnete
-            je praktikovat pravidelně a s radostí. Více informací k jednotlivým
-            meditacím můžete najít na našem Instagramu.
+            činnosti. Vyberte si oblast, která vás zajímá, a objevte různé
+            praktiky, které můžete začlenit do svého života.
           </p>
           <div className="klasik">
             <div className="klasik-left">
@@ -79,24 +71,30 @@ const Mindfulness = () => {
               </p>
               <ul className="mindfulness-list">
                 <li>
-                  <strong>Pokud chcete vnitřní klid a vhled: </strong>&nbsp;
+                  {' '}
+                  <strong>Pokud chcete vnitřní klid a vhled: </strong>{' '}
                   Vipassaná, Zazen
                 </li>
                 <li>
-                  <strong>Pokud bojujete se stresem a napětím: </strong>&nbsp;
-                  Body Scan, Jóga Nidra, Pránájáma
+                  {' '}
+                  <strong>Pokud bojujete se stresem a napětím: </strong> Body
+                  Scan, Jóga Nidra, Pránájáma
                 </li>
                 <li>
-                  <strong>Pokud chcete posílit empatii a laskavost:</strong>{' '}
-                  &nbsp; Metta meditace
+                  {' '}
+                  <strong>
+                    Pokud chcete posílit empatii a laskavost:
+                  </strong>{' '}
+                  Metta meditace
                 </li>
                 <li>
-                  <strong>Pokud máte potíže se soustředěním: </strong>{' '}
-                  &nbsp;Trátak, Mantra meditace, Sata Nama
+                  {' '}
+                  <strong>Pokud máte potíže se soustředěním: </strong> Trátak,
+                  Mantra meditace, Sata Nama
                 </li>
                 <li>
-                  <strong>Pokud potřebujete uvolnit emoce pohybem: </strong>
-                  &nbsp; Dynamická meditace
+                  <strong>Pokud potřebujete uvolnit emoce pohybem: </strong>{' '}
+                  Dynamická meditace
                 </li>
               </ul>
               <div className="medidationtypes-box">
