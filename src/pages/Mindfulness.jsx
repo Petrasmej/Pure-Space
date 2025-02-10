@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import MeditationList from '../components/MeditationList';
@@ -136,6 +137,18 @@ const Mindfulness = () => {
               <img className="klasik-img" src={misaImg} alt="tibetske misky" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="parallax-mindfulness">
+        <div className="container parallax-cont">
+          <h2>
+            Vyzkoušejte mindfulness a najděte harmonii ve svém každodenním
+            životě.
+          </h2>
+          <Link to="/TBA" className="button">
+            Zjistit více o programu Pure Space
+          </Link>
         </div>
       </section>
 

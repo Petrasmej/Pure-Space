@@ -38,25 +38,32 @@ const meditationTypes = [
     shortDesc: (
       <>
         <p>
-          Vědomá pozornost na části těla a uvolnění napětí. Pomáhá snižovat
-          stres, zlepšuje propojení mysli a těla, podporuje relaxaci. Je to
-          vědecky podložená metoda využívaná v moderní psychologii (terapie
-          MBSR, MBCT).
+          Vědomá pozornost na své tělo a jeho uvolnění. Pomáhá snižovat stres,
+          zlepšuje propojení mysli a těla, podporuje relaxaci a kvalitní spánek.
+          Je to vědecky podložená metoda využívaná v moderní psychologii
+          (terapie MBSR, MBCT). Je také často součástí joga nidry.
         </p>
       </>
     ),
     longDesc: '',
   },
   {
-    title: 'Pránájáma',
+    title: 'Meditace dechu a Pránájáma',
     shortDesc: (
       <>
         <p>
-          Různé techniky kontrolovaného dýchání (např. Nadi Shodhana, Bhastrika)
-          pro zklidnění a harmonizaci těla a mysli. Pránájáma sama o sobě není
-          meditace, ale často se využívá jako na hlubší meditaci nebo jako
-          metoda k řízení emocí. Zlepšuje okysličení mozku, reguluje stresovou
-          reakci a podporuje soustředění.
+          <strong>Dechová meditace</strong> vám umožní plně se soustředit na
+          přítomný okamžik prostřednictvím vědomého dýchání. Soustředíte se na
+          nádech a výdech.
+          <br />
+          <strong>Pránájáma</strong> zahrnuje různé techniky kontrolovaného
+          dýchání (např. Nadi Shodhana, Bhastrika) pro zklidnění a harmonizaci
+          těla a mysli. Pránájáma sama o sobě není meditace, ale často se
+          využívá jako příprava na hlubší meditaci nebo jako metoda k řízení
+          emocí.
+          <br />
+          Obě metody zlepšují okysličení mozku, regulují stresovou reakci a
+          podporují soustředění.
         </p>
       </>
     ),
@@ -67,9 +74,9 @@ const meditationTypes = [
     shortDesc: (
       <>
         <p>
-          Hluboká relaxační technika, kdy tělo spí, ale mysl zůstává bdělá.
-          Pomáhá při stresu, úzkosti. Vede k hlubokému uvolnění, obnově energie
-          a zlepšení spánku.
+          Hluboká a velmi účinná relaxační technika, kdy tělo spí, ale mysl
+          zůstává bdělá. Pomáhá při stresu a úzkosti. Vede k hlubokému uvolnění,
+          obnově energie a zlepšení spánku.
         </p>
         <p>
           <strong>Dozvědět se více </strong>
@@ -79,8 +86,8 @@ const meditationTypes = [
     longDesc: (
       <>
         <p>
-          Optimální délka jóga nidry závisí na tvých potřebách a časových
-          možnostech, ale obecně platí:
+          Optimální délka jóga nidry závisí na individuálních potřebách a
+          časových možnostech, ale obecně platí:
         </p>
         <ul>
           <li>
@@ -96,7 +103,7 @@ const meditationTypes = [
             nervového systému, posílení kreativity a emoční rovnováhy.
           </li>
           <p>
-            I krátká praxe přináší benefity, ale pokud chceš plně využít její
+            I krátká praxe přináší benefity, ale pokud chcete plně využít její
             potenciál, 30–45 minut je ideální. Už jedna hodina jóga nidry může
             nahradit 3–4 hodiny běžného spánku! Důležité je pravidelnost – i pár
             minut denně může změnit kvalitu tvého života.
@@ -122,6 +129,7 @@ const meditationTypes = [
       <>
         <div>
           <p className="headlineMedit">Sata Nama meditace</p>
+          <p>12 minut denně.</p>
           <p>
             Opakování mantry „Sa Ta Na Ma“ spojené s pohybem prstů (mudry).
             Symbolizuje cyklus života (SA = zrození, TA = život, NA = smrt, MA =
@@ -131,7 +139,7 @@ const meditationTypes = [
             schopnost vybavovat si informace, logické myšlení, plynulost řeči,
             posílí se psychické zdraví, včetně zmírnění nebo vymizení úzkosti,
             deprese a stresu. Nervovou soustavu revitalizuje kombinace několika
-            aktivit u této metody: zpívání, stimulování bříšek prstů,
+            aktivit u této metody: zpívání, stimulování bříšek prstů a
             vizualizace.
           </p>
           <p>
@@ -145,7 +153,7 @@ const meditationTypes = [
               <li>NA – palec + prsteníček (symbolizuje energii života)</li>
               <li>MA – palec + malíček (symbolizuje regeneraci)</li>
             </ul>
-            Dýcháme přirozeně. Představujte si paprsek světla procházející do
+            Dýcháme přirozeně. Představujeme si paprsek světla procházející do
             bodu mezi obočím (třetí oko). Nádech nosem → na výdechu opakujte
             mantru Sa Ta Na Ma. V první fázi zpívejte s nahrávkou nahlas, poté
             šeptem, poté v duchu , poté zase šeptem a naposledy nahlas. Nemusíte
@@ -162,7 +170,7 @@ const meditationTypes = [
         </div>
         <div className="next">
           <p className="headlineMedit">OM Chanting</p>
-          <p>Směr: Hinduismus</p>
+          <p>5–10 minut denně.</p>
           <p>
             OM je prvotní zvuk vesmíru, spojovaný s harmonií, jednotou a vibrací
             celého těla i mysli. Benefity OM Chantingu jsou okamžité uvolnění
@@ -170,14 +178,15 @@ const meditationTypes = [
             Zlepšení dýchání a okysličení – Práce s dechem podporuje průtok
             kyslíku k plodu. Jemná vibrace pro dítě – Plod vnímá tyto zvukové
             vlny jako harmonizační signál. Jednoduchost – Stačí opakovaně zpívat
-            OM na jeden dlouhý výdech.
+            OM na jeden dlouhý výdech. Om Chanting je skupinová praxe, ale
+            můžete si ji vyzkoušet i sami doma.
           </p>
           <p>
             <strong>Jak na to?</strong> Sedneme si rovně se vzpřímenou páteří,
             ideálně do tureckého sedu, ruce volně položené na nohou. Oči
             zavřené. Nádech nosem → Výdech OooooMmmmmm. Nechte vibraci projít
-            celým tělem. Opakujte 5–10 minut denně. Nemusíte zpívat hlasitě, ale
-            mělo by to rezonovat. Středně hlasitý zpěv je optimální.
+            celým tělem. Nemusíte zpívat hlasitě, ale mělo by to rezonovat.
+            Středně hlasitý zpěv je optimální.
           </p>
         </div>
       </>
@@ -189,9 +198,9 @@ const meditationTypes = [
       <>
         <p>
           Rozvíjení laskavosti k sobě i druhým skrze pozitivní afirmace a přání
-          štěstí. Pomáhá zmírnit negativní emoce a posiluje soucit, podporuje
-          emoční pohodu a sociální propojení. Pomáhá při depresích a zvyšuje
-          celkovou spokojenost.
+          štěstí. Pomáhá nalézt oporu, bezpečí a štěstí v sobě.Zmírňuje
+          negativní emoce a posiluje soucit, podporuje emoční pohodu a sociální
+          propojení. Pomáhá při depresích a zvyšuje celkovou spokojenost.
         </p>
       </>
     ),
