@@ -4,6 +4,7 @@ import MeditationList from '../components/MeditationList';
 import mindfulnessImg from '../assets/mindfulness.jpg';
 import orchidejImg from '../assets/orchidej.jpg';
 import misaImg from '../assets/misa.jpg';
+import logoIcon from '../assets/logo.svg';
 
 const Mindfulness = () => {
   return (
@@ -16,36 +17,58 @@ const Mindfulness = () => {
             <h1 className="hero-white">Mindfulness</h1>
             <p className="info-text">
               Mindfulness není jen trend, ale vědecky ověřený nástroj pro
-              posílení psychické odolnosti. Výzkumy ukazují, že pravidelná praxe
-              mindfulness snižuje stres, zlepšuje koncentraci a mění strukturu
-              mozku – zvyšuje hustotu šedé hmoty v oblastech odpovědných za
-              paměť a emoce a snižuje aktivitu amygdaly, čímž pomáhá regulovat
-              úzkost. Mindfulness snižuje hladinu kortizolu, zlepšuje imunitu a
-              podporuje celkové zdraví. Stačí pár minut denně, žádné speciální
-              vybavení – jen dech, pozornost a ochota zpomalit.
-              <br />
-              <strong> Co je mindfulness?</strong>
-              Mindfulness (neboli vědomá pozornost) je stav, kdy se soustředíme
-              na přítomný okamžik s otevřeností, bez hodnocení a přítomnosti.
+              posílení psychické odolnosti. Desítky let výzkumů trvale dokazují,
+              že{' '}
+              <strong>
+                pravidelná praxe mindfulness snižuje stres, zlepšuje koncentraci
+                a mění strukturu mozku
+              </strong>{' '}
+              – zvyšuje hustotu šedé hmoty v oblastech odpovědných za paměť a
+              emoce a snižuje aktivitu amygdaly, čímž pomáhá regulovat úzkost.{' '}
+              <strong>
+                Mindfulness snižuje hladinu kortizolu, zlepšuje imunitu a
+                podporuje psychickou pohodu a celkové zdraví.
+              </strong>{' '}
+              Stačí pár minut denně, žádné speciální vybavení – jen dech,
+              pozornost a ochota zpomalit.
+            </p>
+            <h3> Co je mindfulness?</h3>
+            <p className="info-text">
+              <strong>
+                Mindfulness (neboli vědomá pozornost) je stav,kdy se soustředíme
+                na přítomný okamžik s otevřeností, bez hodnocení a v
+                přítomnosti.
+              </strong>{' '}
               Jde o schopnost plně si uvědomovat, co se děje v našem těle, mysli
-              a okolí právě teď. Mindfulness se může projevovat jak v meditaci,
-              tak v běžných každodenních činnostech. Pomáhá nám zlepšit
-              soustředění, snížit stres, lépe se vyrovnávat s emocemi a zlepšit
-              psychickou pohodu. Praktiky mindfulness zahrnují různé techniky,
-              jako je meditace, pohyb, vědomé dýchání nebo soustředění se na
-              konkrétní činnosti (např. jídlo, sprchu, chůzi). V praxi jde o to,
-              že se učíme být více tady a teď, místo abychom byli zahlceni
-              myšlenkami o minulosti nebo budoucnosti.
+              a okolí právě teď. <strong>Mindfulness je pro každého</strong>,
+              nezávisle na tom, z jaké kultury pochází nebo jaký systém víry či
+              náboženství vyznává. Projevuje se jak v meditaci, tak v běžných
+              každodenních činnostech. V praxi jde o to, že se učíme být více
+              tady a teď, místo abychom byli zahlceni myšlenkami o minulosti
+              nebo budoucnosti. Díky tomu dovedeme lépe zvládat každodenní výzvy
+              s větší lehkostí, klidem i efektivitou.
             </p>
           </div>
         </div>
       </section>
 
       <section className="obsah">
-        <div className="obsah-container">
-          <h2>Obsah</h2>
-          <a href="#kategorie"> Kategorie Mindfulness</a>
-          <a href="#jakZacit">Jak začít s Mindfulness</a>
+        <div className="container-grid">
+          <div className="obsah-grid">
+            <div className="grid-leftBox obsah-box">
+              <h2>Obsah</h2>
+              <a href="#kategorie"> Kategorie Mindfulness</a>
+              <a href="#jakZacit">Jak začít s Mindfulness</a>
+            </div>
+            <div className="grid-rightBox">
+              <img
+                src={logoIcon}
+                className="obsah-logo"
+                loading="lazy"
+                alt="logo Pure space- kapka vody"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

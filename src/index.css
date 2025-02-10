@@ -2,7 +2,7 @@
 :root {
   --text: #4f5257;
   --background-1: #e9edf0;
-  --background-2: #f2f2f2;
+
   --background-meditation1: #F9FAFB;
   --background-meditation3: #D9E2E8;
   --blue: #52748a;
@@ -21,6 +21,28 @@ body {
 
 section {
   overflow: hidden;
+}
+
+.strong-inline {
+  display: inline-block;
+}
+
+.strong-block {
+  display: block;
+  margin-top: 10px;
+  /* Zvýší mezeru mezi <br /> a <strong> */
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 a {
@@ -171,7 +193,7 @@ a {
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 15px;
   text-align: center;
 
@@ -188,15 +210,16 @@ a {
   text-align: left;
 }
 
-.info-text strong {
-  display: block;
-  margin-top: 10px;
-  /* Zvýší mezeru mezi <br /> a <strong> */
-}
+
 
 .cards {
   background: var(--background-1);
   padding: 50px 0;
+}
+
+.cards-heading {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .card-box {
@@ -248,16 +271,24 @@ a {
 
 .parallax {
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   /* Výška na 50% viewportu */
   background: url("assets/bloomingFlowers.jpg") center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ====== DIGITÁLNÍ DETOX & DETOX PLÁN GRID ====== */
-
-.detox-plan {
-  background-color: var(--background-2);
+.parallax-cont {
+  text-align: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 10px 50px 10px;
+  border-radius: 15px;
 }
+
+/* ====== DIGITÁLNÍ DETOX PLÁN GRID ====== */
+
 
 .container-grid {
   width: 90%;
@@ -266,8 +297,7 @@ a {
 
 }
 
-.digitalni-detox .grid,
-.detox-plan .grid {
+.digitalni-detox .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -289,11 +319,7 @@ a {
   padding: 100px 20px;
 }
 
-.grid-rightBox .detox-plan {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+
 
 
 /* ====== GALERIE ====== */
@@ -402,20 +428,12 @@ footer {
     width: 80vw;
   }
 
-  .digitalni-detox .grid,
-  .detox-plan .grid {
+  .digitalni-detox .grid {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 0px;
   }
 
-  .grid-leftBox:first-child {
-    order: 2;
-  }
-
-  .grid-rightBoxdiv:last-child {
-    order: 1;
-  }
 
   .grid-leftBox {
     padding: 0px 20px 60px 20px;
@@ -480,15 +498,12 @@ footer {
   border-radius: 15px;
 }
 
-
-
-
 /* Mindfulness */
 .mindfulness {
   background-image: url("../public/mind-hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 100%;
 }
 
 .box-white {
@@ -497,16 +512,22 @@ footer {
   border-radius: 15px;
 }
 
-.obsah-container {
-  max-width: 1100px;
-  margin: 0 auto;
+.obsah-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
   padding: 100px 20px 0px 20px;
+}
+
+.obsah-box {
+  padding: 0px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.obsah-container a {
+.obsah-box a {
   display: inline-block;
   /* Prostor mezi odkazy */
   text-decoration: none;
@@ -518,10 +539,15 @@ footer {
   border-radius: 50px;
 }
 
-.obsah-container a:hover {
+.obsah-box a:hover {
   background-color: var(--blue);
   color: white;
   border-radius: 50px;
+}
+
+.obsah-logo {
+  max-width: 200px;
+  margin-left: 150px;
 }
 
 .klasik {
@@ -644,6 +670,15 @@ footer {
     height: 100%;
   }
 
+  .mindfulness-list {
+    padding: 10px;
+  }
+
+  .mindfulness-list li {
+    font-size: 14px;
+    /* Menší písmo na mobilech */
+    margin-bottom: 12px;
+  }
 
   .klasik-right {
     display: none;

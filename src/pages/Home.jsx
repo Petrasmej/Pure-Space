@@ -6,9 +6,8 @@ import iphoneImg from '../assets/iphone.jpg';
 import meditationImg from '../assets/meditation.jpg';
 import teaLevanderImg from '../assets/teaLevander.jpg';
 import mobileMockupImg from '../assets/mobileMockup-min.png';
-import NotesImg from '../assets/notes.jpg';
 import snihKvetImg from '../assets/snihKvet.jpg';
-import treesLakeImg from '../assets/treesLake.jpg';
+import yogaImg from '../assets/yoga.jpg';
 import teaCupsImg from '../assets/teaCups.jpg';
 import skyImg from '../assets/sky.jpg';
 
@@ -33,19 +32,22 @@ const Home = () => {
         <div className="container">
           <p className="info-text">
             V dnešní nejisté době, kdy nás každodenně bombardují negativní
-            zprávy a neustálý tok informací, mnozí z nás se cítí zahlcení, plní
+            zprávy a neustálý tok informací, se mnozí z nás cítí zahlcení, plní
             stresu a úzkosti. Neustálé připojení k digitálnímu světu nás odvádí
             od skutečného života, naše mysli jsou přeplněné a těžko nacházíme
-            klid. Co kdyby existoval způsob, jak si od této intenzivní digitální
-            zátěže odpočinout? Jak najít znovu radost a rovnováhu? Digitální
-            detox a malé, ale mocné denní rituály mohou být klíčem k tomu,
-            abychom se vrátili k sobě, k přítomnému okamžiku a opětovně objevili
-            štěstí v jednoduchosti.
-            <br />
+            klid.{' '}
             <strong>
+              Pojďte si od této intenzivní digitální zátěže odpočinout, najít
+              znovu radost a rovnováhu.
+            </strong>{' '}
+            Digitální detox a malé, ale mocné denní rituály mohou být klíčem k
+            tomu, abychom se vrátili k sobě, k přítomnému okamžiku a opětovně
+            objevili štěstí v jednoduchosti.
+            <br />
+            <strong className="strong-block">
               {' '}
               Stačí udělat první krok – a cesta ke klidnějšímu a vyrovnanějšímu
-              životu může začít právě teď.
+              životu může začít právě teď. Objevte náš program Pure Space.
             </strong>
           </p>
         </div>
@@ -53,6 +55,9 @@ const Home = () => {
 
       <section className="cards">
         <div className="container">
+          <h2 className="cards-heading">
+            Najděte cestu k vnitřní rovnováze – tipy pro lepší duševní zdraví.
+          </h2>
           <div className="card-box">
             <Link to="/TBA" className="link-card">
               <div className="card">
@@ -99,58 +104,45 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="parallax"></section>
+      <section className="parallax">
+        <div className="container parallax-cont">
+          <h2>
+            Harmonie pro vaši mysl – inspirace, jak o sebe pečovat každý den.{' '}
+          </h2>
+          <Link to="/TBA" className="button">
+            Zjistit více o programu Pure Space
+          </Link>
+        </div>
+      </section>
 
       <section className="digitalni-detox">
         <div className="container-grid">
           <div className="grid">
-            <div className="grid-leftBox reverse1">
-              <img
-                src={mobileMockupImg}
-                loading="lazy"
-                alt="Mobilní aplikace"
-              />
-            </div>
-            <div className="grid-rightBox reverse2">
-              <h2>Digitální detox</h2>
+            <div className="grid-leftBox">
+              <h2>První krok je na vás – zkuste to ještě dnes! </h2>
+              <h3>Týdenní plán pro digitální detox</h3>
               <p>
                 Digitální detox nám pomáhá znovu získat kontrolu nad tím, co nás
                 ovlivňuje. Jakmile ztišíme digitální šum, otevře se nám prostor
-                pro hlubší propojení s námi samotnými.
-              </p>
-              <Link to="/TBA" className="button">
-                Zjistit více
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="detox-plan">
-        <div className="container-grid">
-          <div className="grid">
-            <div className="grid-leftBox">
-              <h2>Týdenní plán</h2>
-              <p>
-                Vyzkoušejte týdenní plán digitálního detoxu a objevte klid
-                uprostřed chaosu! Představte si, že byste mohli na pouhý týden
-                zpomalit, vypnout neustálý digitální šum a znovu najít rovnováhu
-                ve svém životě. Pojďme si spolu vytvořit týdenní plán
-                digitálního detoxu, který je navržen tak, aby vám pomohl ulevit
-                od stresu, osvobodit se od závislosti na technologiích a znovu
-                objevit radost z přítomného okamžiku. Každý den vás čekají
-                jednoduché úkoly a malé rituály, které vám ukážou, jak snadné je
-                najít klid a energii, aniž byste museli utéct na odlehlý ostrov.
-                Připojte se k této výzvě a poznejte, jaké to je skutečně být
-                offline a plně přítomní – stačí začít. Vaše mysl i tělo vám
-                poděkují!
+                pro hlubší propojení s námi samotnými. Zpomalte na pouhý týden a
+                najděte rovnováhu ve svém životě. Pojďme si spolu vytvořit
+                týdenní plán digitálního detoxu, který je navržen tak, aby vám
+                pomohl ulevit od stresu, osvobodit se od závislosti na
+                technologiích a znovu objevit radost z přítomného okamžiku.
+                Každý den vás čekají jednoduché úkoly a malé rituály, které vám
+                ukážou, jak snadné je najít klid a energii, aniž byste museli
+                utéct na odlehlý ostrov. Vaše mysl i tělo vám poděkují!
               </p>
               <a href="/tydenni-plan.pdf" className="button" target="_blank">
                 Stáhnout plán zdarma
               </a>
             </div>
             <div className="grid-rightBox">
-              <img src={NotesImg} loading="lazy" alt="Týdenní plán" />
+              <img
+                src={mobileMockupImg}
+                loading="lazy"
+                alt="Mobilní aplikace"
+              />
             </div>
           </div>
         </div>
@@ -158,9 +150,9 @@ const Home = () => {
 
       <section className="gallery">
         <div className="gallery-wrapper">
-          <img src={treesLakeImg} loading="lazy" alt="Scéna přírody" />
-          <img src={snihKvetImg} loading="lazy" alt="Západ slunce" />
           <img src={teaCupsImg} loading="lazy" alt="Šálek čaje" />
+          <img src={snihKvetImg} loading="lazy" alt="Západ slunce" />
+          <img src={yogaImg} loading="lazy" alt="joginka" />
           <img src={skyImg} loading="lazy" alt="Přírodní scenérie" />
         </div>
       </section>

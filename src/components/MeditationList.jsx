@@ -14,7 +14,6 @@ const meditationTypes = [
           snižovat negativní myšlenkové vzorce. Dlouhodobá praxe vede ke
           zklidnění mysli a vyšší emoční stabilitě.
         </p>
-        <p>Směr: Buddhistická meditace (Théravádová tradice)</p>
       </>
     ),
     longDesc: '',
@@ -30,7 +29,6 @@ const meditationTypes = [
           volně plynout. Posiluje vnitřní klid, mentální odolnost a schopnost
           soustředění.
         </p>
-        <p>Směr: Zen-buddhismus (Mahájána)</p>
       </>
     ),
     longDesc: '',
@@ -41,11 +39,9 @@ const meditationTypes = [
       <>
         <p>
           Vědomá pozornost na části těla a uvolnění napětí. Pomáhá snižovat
-          stres, zlepšuje propojení mysli a těla, podporuje relaxaci.
-        </p>
-        <p>
-          Je to vědecky podložená metoda využívaná v moderní psychologii
-          (terapie MBSR, MBCT).
+          stres, zlepšuje propojení mysli a těla, podporuje relaxaci. Je to
+          vědecky podložená metoda využívaná v moderní psychologii (terapie
+          MBSR, MBCT).
         </p>
       </>
     ),
@@ -62,7 +58,6 @@ const meditationTypes = [
           metoda k řízení emocí. Zlepšuje okysličení mozku, reguluje stresovou
           reakci a podporuje soustředění.
         </p>
-        <p>Směr: Jóga, védská tradice</p>
       </>
     ),
     longDesc: '',
@@ -76,7 +71,6 @@ const meditationTypes = [
           Pomáhá při stresu, úzkosti. Vede k hlubokému uvolnění, obnově energie
           a zlepšení spánku.
         </p>
-        <p>Směr: Jóga, tantrická tradice</p>
         <p>
           <strong>Dozvědět se více </strong>
         </p>
@@ -119,7 +113,6 @@ const meditationTypes = [
           Opakování posvátných slov nebo zvuků (např. „Om“, „So Hum, Sata
           Nama“). Zlepšuje koncentraci a může podporovat neuroplasticitu.
         </p>
-        <p>Směr: Hinduismus, buddhismus</p>
         <p>
           <strong>Dozvědět se více </strong>
         </p>
@@ -129,7 +122,6 @@ const meditationTypes = [
       <>
         <div>
           <p className="headlineMedit">Sata Nama meditace</p>
-          <p>Směr: Kundaliní jóga</p>
           <p>
             Opakování mantry „Sa Ta Na Ma“ spojené s pohybem prstů (mudry).
             Symbolizuje cyklus života (SA = zrození, TA = život, NA = smrt, MA =
@@ -201,7 +193,6 @@ const meditationTypes = [
           emoční pohodu a sociální propojení. Pomáhá při depresích a zvyšuje
           celkovou spokojenost.
         </p>
-        <p>Směr: Buddhistická meditace (Théraváda, Mahájána)</p>
       </>
     ),
     longDesc: '',
@@ -222,22 +213,20 @@ export default function MeditationList() {
           <p className="meditation-title">{meditation.title}</p>
 
           {/* Krátký popis */}
-          <p className="meditation-short">{meditation.shortDesc}</p>
+          <div className="meditation-short">{meditation.shortDesc}</div>
 
           {/* Tlačítko na rozbalení */}
           {meditation.longDesc && (
-            <>
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="toggle-btn"
-              >
-                <img
-                  src={openIndex === index ? arrowUp : arrowDown}
-                  alt="Toggle description"
-                  className="toggle-icon"
-                />
-              </button>
-            </>
+            <button
+              onClick={() => setOpenIndex(openIndex === index ? null : index)}
+              className="toggle-btn"
+            >
+              <img
+                src={openIndex === index ? arrowUp : arrowDown}
+                alt="Toggle description"
+                className="toggle-icon"
+              />
+            </button>
           )}
 
           {/* Detailní popis (zobrazuje se jen po rozbalení) */}
