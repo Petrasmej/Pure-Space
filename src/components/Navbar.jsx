@@ -61,9 +61,9 @@ const Navbar = () => {
           <Link to="/Mindfulness" onClick={() => setIsOpen(false)}>
             Mindfulness
           </Link>
-          <Link to="/TBA" onClick={() => setIsOpen(false)}>
+          <a href="#kontakt" onClick={() => setIsOpen(false)}>
             Kontakt
-          </Link>
+          </a>
           <Link to="/TBA" className="button" onClick={() => setIsOpen(false)}>
             E-BOOK
           </Link>
