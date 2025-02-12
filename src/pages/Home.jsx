@@ -147,6 +147,7 @@ const Home = () => {
             </div>
             <div className="grid-rightBox">
               <img
+                className="phone"
                 src={mobileMockupImg}
                 loading="lazy"
                 alt="Mobilní aplikace"

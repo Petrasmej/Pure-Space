@@ -343,6 +343,10 @@ a {
   padding-bottom: 40px;
 }
 
+.phone {
+  padding-top: 50px;
+}
+
 
 /* ====== GALERIE ====== */
 .gallery {
@@ -474,7 +478,9 @@ footer {
     padding: 60px 20px 0px 20px;
   }
 
-
+  .phone {
+    padding-top: 0px;
+  }
 
   .gallery img {
     width: 50%;
