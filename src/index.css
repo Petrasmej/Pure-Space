@@ -770,6 +770,8 @@ footer {
 
 .grid-rightBox {
   padding: 0px;
+  display: flex;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
