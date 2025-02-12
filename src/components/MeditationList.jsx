@@ -94,7 +94,7 @@ const meditationTypes = [
             <b>10–20 minut</b>→ Rychlá relaxace, ideální pro snížení stresu a
             obnovení energie během dne.{' '}
             <div className="test-jogaN">
-              <AudioPlayer src="/audio/Joga Nidra.m4a" title="Jóga Nidra" />
+              <AudioPlayer />
             </div>
           </li>
           <li>
