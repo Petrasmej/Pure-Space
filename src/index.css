@@ -807,6 +807,10 @@ footer {
     margin-bottom: 12px;
   }
 
+  .obsah-grid {
+    padding: 60px 20px 0px 10px;
+  }
+
   .klasik {
     flex-direction: column;
     /* Přepne na jeden sloupec */
