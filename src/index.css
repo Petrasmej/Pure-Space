@@ -39,7 +39,8 @@ section {
   /* Zvýší mezeru mezi <br /> a <strong> */
 }
 
-a {
+a,
+link {
   text-decoration: none;
 }
 
