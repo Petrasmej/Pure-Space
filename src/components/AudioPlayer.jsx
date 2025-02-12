@@ -6,13 +6,16 @@ const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const playAudio = () => {
-    if (audioRef.current && audioRef.current.readyState >= 2) {
+    if (audioRef.current) {
+      // Pokud není zvuk načtený, čekáme, až bude připravený
       audioRef.current
         .play()
-        .then(() => setIsPlaying(true))
-        .catch((error) => console.error('Přehrávání zablokováno:', error));
-    } else {
-      console.error('Audio soubor se ještě nenačetl.');
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch((error) => {
+          console.error('Přehrávání zablokováno:', error);
+        });
     }
   };
 
