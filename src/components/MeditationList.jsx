@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import AudioPlayer from './AudioPlayer';
 import arrowDown from '../assets/sipka-rozklik.svg';
 import arrowUp from '../assets/sipka-zpet.svg';
 
@@ -93,6 +93,9 @@ const meditationTypes = [
           <li>
             <b>10–20 minut</b>→ Rychlá relaxace, ideální pro snížení stresu a
             obnovení energie během dne.{' '}
+            <div className="test-jogaN">
+              <AudioPlayer src="/audio/Joga Nidra.m4a" title="Jóga Nidra" />
+            </div>
           </li>
           <li>
             <b>20–40 minut</b> → Hlubší regenerace těla i mysli, lepší spánek,

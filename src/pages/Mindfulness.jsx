@@ -6,6 +6,7 @@ import mindfulnessImg from '../assets/mindfulness.jpg';
 import orchidejImg from '../assets/orchidej.jpg';
 import misaImg from '../assets/misa.jpg';
 import logoIcon from '../assets/logo.svg';
+import meditationImg from '../assets/meditation.jpg';
 
 const Mindfulness = () => {
   return (
@@ -33,7 +34,7 @@ const Mindfulness = () => {
               Stačí pár minut denně, žádné speciální vybavení – jen dech,
               pozornost a ochota zpomalit.
             </p>
-            <h3> Co je mindfulness?</h3>
+            <h3 className="h3grey"> Co je mindfulness?</h3>
             <p className="info-text">
               <strong>
                 Mindfulness (neboli vědomá pozornost) je stav,kdy se soustředíme
@@ -153,7 +154,123 @@ const Mindfulness = () => {
       </section>
 
       <section className="jakZacit" id="jakZacit">
-        <div className="container"></div>
+        <div className="container">
+          <div>
+            <h2>Jak začít s mindfulness</h2>
+            <p className="info-text">
+              Jedním z nejjednodušších způsobů, jak začít s mindfulness, je
+              začít pravidelně meditovat. Začněte s krátkými meditacemi, třeba
+              5–10 minut denně. Můžete se zaměřit na svůj dech, tělo nebo
+              myšlenky. Pokud máte problémy s udržením pozornosti, zkuste
+              aplikace pro meditaci (např. Headspace, Calm nebo Insight Timer).
+              Nejdůležitější je začít a být vděční za každý moment, kdy se
+              zaměříte na přítomnost. Nezáleží na tom, zda máte pocit, že to
+              děláte správně, nebo jak dlouho vydržíte – jde o to, že to děláte
+              a každá minuta se počítá.
+            </p>
+          </div>
+          <div className="cardM m1">
+            <div className="card-textwrapM">
+              <h3 className="heading card-heading">1. Dýchání</h3>
+              <p className="card-text">
+                Vědomé dýchání je základním kamenem mindfulness. Snažte se během
+                dne zaměřit na své dýchání, vnímejte, jak vzduch vstupuje a
+                opouští vaše tělo. Zkuste se na chvíli zastavit a dýchat pomalu
+                a hluboce, když se cítíte ve stresu nebo zaneprázdněni.
+              </p>
+            </div>
+          </div>
+
+          <div className="cardM m2">
+            <div className="card-textwrapM">
+              <h3 className="heading card-heading">
+                2. Mindfulness v každodenním životě
+              </h3>
+              <p className="card-text">
+                Mindfulness může být součástí jakékoli činnosti, kterou děláte.
+                Můžete začít být více přítomní při jídle (všímejte si chutí,
+                textury a vůní), při chůzi (vnímejte pohyb svého těla a
+                prostředí kolem vás), nebo při sprchování (vnímejte teplotu
+                vody, doteky na kůži).
+              </p>
+            </div>
+          </div>
+
+          <div className="cardM m3">
+            <div className="card-textwrapM">
+              <h3 className="heading card-heading">
+                3. Buďte trpěliví a k sobě laskaví
+              </h3>
+              <p className="card-text">
+                Mindfulness je dovednost, kterou si vybudujete časem. Nezáleží
+                na tom, jak "dobří" jste hned na začátku. Pokud vaše mysl
+                zabloudí, je to normální – stačí si to uv2domit, nehodnotit, jen
+                ji jemně vrátit k přítomnému okamžiku. Buďte trpěliví a laskaví
+                sami na sebe.
+              </p>
+            </div>
+          </div>
+
+          <div className="cardM m4">
+            <div className="card-textwrapM">
+              <h3 className="heading card-heading">
+                4. Vyzkoušejte různé techniky
+              </h3>
+              <p className="card-text">
+                Vyberte si techniky, které vám nejvíce vyhovují. Někomu může
+                více vyhovovat meditace, jiný zase dává přednost pohybovým
+                formám jako jóga nebo tai chi. Každá technika má své výhody, a
+                můžete experimentovat, která vám nejlépe sedí.
+              </p>
+            </div>
+          </div>
+
+          <div className="cardM m5">
+            <div className="card-textwrapM">
+              <h3 className="heading card-heading h5">
+                5. Vytvořte si pravidelný čas pro mindfulness
+              </h3>
+              <p className="card-text">
+                Zkuste si každý den vyhradit několik minut, kdy se soustředíte
+                pouze na přítomnost – ať už je to během meditace nebo při nějaké
+                každodenní činnosti. I kdzyž se vám nebude chtít, zkuste to
+                alespoň na chvíli. Čím častěji budete praxi opakovat, tím
+                přirozenější se stane.
+              </p>
+            </div>
+          </div>
+
+          <div className="steps-grid">
+            <div className="grid-leftBox">
+              <div className="steps">
+                <h3>Shrnutí kroků</h3>
+                <p>
+                  1. Začněte meditací (5-10 minut denně, postupně můžete
+                  přidávat).
+                </p>
+                <p>2. Cvičte vědomé dýchání. </p>
+                <p>
+                  3. Pracujte na mindfulness během běžných činností (jídlo,
+                  chůze, sprcha).{' '}
+                </p>
+                <p>4. Buďte trpěliví a laskaví k sobě. </p>
+                <p>
+                  5. Vyzkoušejte různé praktiky a najděte tu, která vám nejvíce
+                  vyhovuje.{' '}
+                </p>
+                <p>6. Vytvořte si pravidelný čas pro mindfulness.</p>
+                <p>
+                  Tímto způsobem se mindfulness stane přirozenou součástí vašeho
+                  života a pomůže vám zlepšit soustředění, psychickou pohodu a
+                  schopnost lépe reagovat na stres.
+                </p>
+              </div>
+            </div>
+            <div className="grid-rightBox">
+              <img src={meditationImg} alt="Meditace" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <Footer />

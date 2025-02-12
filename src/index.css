@@ -2,11 +2,17 @@
 :root {
   --text: #4f5257;
   --background-1: #e9edf0;
-
   --background-meditation1: #F9FAFB;
   --background-meditation3: #D9E2E8;
   --blue: #52748a;
   --white: white;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  /* Zakáže horizontální posouvání */
 }
 
 body {
@@ -43,6 +49,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  color: #52748a;
 }
 
 a {
@@ -151,7 +158,10 @@ a {
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
+  font-size: 16px;
   transition: background 0.3s, color 0.3s;
+  font-family: 'Mulish', sans-serif;
+  color: var(--text);
 }
 
 .button:hover {
@@ -193,7 +203,6 @@ a {
 }
 
 .hero-text h1 {
-  font-size: 3rem;
   margin-bottom: 15px;
   text-align: center;
 
@@ -213,7 +222,7 @@ a {
 
 
 .cards {
-  background: var(--background-1);
+  background: var(--background-meditation1);
   padding: 50px 0;
 }
 
@@ -299,7 +308,7 @@ a {
 
 .digitalni-detox .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60% auto;
   gap: 30px;
   align-items: center;
 }
@@ -317,9 +326,17 @@ a {
 
 .grid-leftBox {
   padding: 100px 20px;
+
 }
 
+.grid-rightBox {
+  padding-top: 60px;
 
+}
+
+.test-joga {
+  padding-bottom: 40px;
+}
 
 
 /* ====== GALERIE ====== */
@@ -332,7 +349,6 @@ a {
 .gallery-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
 }
 
 .gallery img {
@@ -386,6 +402,15 @@ footer {
 
 /* ====== RESPONSIVITA ====== */
 @media (max-width: 768px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -413,14 +438,15 @@ footer {
     padding: 60px 20px;
   }
 
-  .hero-text h1 {
-    font-size: 2rem;
-  }
 
   .card-box {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+
+  .cards {
+    padding: 0;
   }
 
   .card {
@@ -443,6 +469,8 @@ footer {
     padding: 60px 20px 0px 20px;
   }
 
+
+
   .gallery img {
     width: 50%;
     height: auto;
@@ -455,6 +483,9 @@ footer {
     text-align: center;
   }
 
+  .kontakt {
+    display: none;
+  }
 
 
   .kontakt-block {
@@ -512,6 +543,10 @@ footer {
   border-radius: 15px;
 }
 
+.h3grey {
+  color: var(--text);
+}
+
 .obsah-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -562,11 +597,11 @@ footer {
 
 .klasik-left {
   flex: 0 0 60%;
-  padding: 20px
+  padding: 20px;
 }
 
 .klasik-right {
-  flex: 0 0 40%;
+  flex: 1;
 }
 
 .mindfulness-title {
@@ -655,6 +690,10 @@ footer {
   transition: opacity 0.3s ease-in-out;
 }
 
+.test-jogaN {
+  padding-bottom: 20px;
+}
+
 .next {
   margin-top: 40px;
 }
@@ -677,9 +716,69 @@ footer {
   align-items: center;
 }
 
+/*Jak zacit*/
+.cardM {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-top: 20px;
+}
+
+.card-textwrapM {
+  padding: 0px 20px 20px 20px;
+  text-align: left;
+}
+
+.m1 {
+  background: var(--white);
+}
+
+.m2 {
+  background-color: #E9EDF0;
+}
+
+.m3 {
+  background-color: #D9E2E8;
+}
+
+.m4 {
+  background-color: #B3C4D1;
+}
+
+.m5 {
+  background-color: #809DB3;
+}
+
+.h5 {
+  color: #3c5565;
+}
+
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: auto 60%;
+  gap: 30px;
+  align-items: center;
+}
+
+.grid-leftBox {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.grid-rightBox {
+  padding: 0px;
+}
+
 @media (max-width: 768px) {
   .mindfulness {
     height: 100%;
+  }
+
+  hero-white {
+    font-size: 2.5rem;
   }
 
   .mindfulness-list {
@@ -687,9 +786,17 @@ footer {
   }
 
   .mindfulness-list li {
-    font-size: 14px;
-    /* Menší písmo na mobilech */
+    display: flex;
+    flex-wrap: wrap;
+    /* Povolit zalomení obsahu na nový řádek */
+    align-items: flex-start;
+    /* Lepší zarovnání */
     margin-bottom: 12px;
+  }
+
+  .klasik {
+    flex-direction: column;
+    /* Přepne na jeden sloupec */
   }
 
   .klasik-right {
@@ -697,8 +804,9 @@ footer {
   }
 
   .klasik-left {
-    flex: 0 0 100%;
-    padding: 20px
+    max-width: 90%;
+    /* Omezí šířku textu */
+    margin: 0 auto;
   }
 
   .meditation-short {
@@ -707,5 +815,17 @@ footer {
 
   .meditation-long {
     padding-right: 10px;
+  }
+
+  .obsah-logo {
+    margin-left: 0px;
+  }
+
+  .steps-grid {
+    display: block;
+  }
+
+  .grid-leftBox {
+    padding-top: 20px;
   }
 }

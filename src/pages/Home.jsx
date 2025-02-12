@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AudioPlayer from '../components/AudioPlayer';
 import benefitsImg from '../assets/benefits-min.png';
 import iphoneImg from '../assets/iphone.jpg';
 import meditationImg from '../assets/meditation.jpg';
@@ -119,23 +120,30 @@ const Home = () => {
         <div className="container-grid">
           <div className="grid">
             <div className="grid-leftBox">
-              <h2>První krok je na vás – zkuste to ještě dnes! </h2>
-              <h3>Týdenní plán pro digitální detox</h3>
-              <p>
-                Digitální detox nám pomáhá znovu získat kontrolu nad tím, co nás
-                ovlivňuje. Jakmile ztišíme digitální šum, otevře se nám prostor
-                pro hlubší propojení s námi samotnými. Zpomalte na pouhý týden a
-                najděte rovnováhu ve svém životě. Pojďme si spolu vytvořit
-                týdenní plán digitálního detoxu, který je navržen tak, aby vám
-                pomohl ulevit od stresu, osvobodit se od závislosti na
-                technologiích a znovu objevit radost z přítomného okamžiku.
-                Každý den vás čekají jednoduché úkoly a malé rituály, které vám
-                ukážou, jak snadné je najít klid a energii, aniž byste museli
-                utéct na odlehlý ostrov. Vaše mysl i tělo vám poděkují!
-              </p>
-              <a href="/tydenni-plan.pdf" className="button" target="_blank">
-                Stáhnout plán zdarma
-              </a>
+              <h2>Vyzkoušejte ještě dnes! </h2>
+              <div className="test-joga">
+                <h3>Máš 15 minut? Odpočiň si s joga nidrou.</h3>
+                <AudioPlayer src="/audio/Joga Nidra.m4a" title="Jóga Nidra" />
+              </div>
+              <div className="test">
+                <h3>Týdenní plán pro digitální detox</h3>
+                <p>
+                  Digitální detox nám pomáhá znovu získat kontrolu nad tím, co
+                  nás ovlivňuje. Jakmile ztišíme digitální šum, otevře se nám
+                  prostor pro hlubší propojení s námi samotnými. Zpomalte na
+                  pouhý týden a najděte rovnováhu ve svém životě. Pojďme si
+                  spolu vytvořit týdenní plán digitálního detoxu, který je
+                  navržen tak, aby vám pomohl ulevit od stresu, osvobodit se od
+                  závislosti na technologiích a znovu objevit radost z
+                  přítomného okamžiku. Každý den vás čekají jednoduché úkoly a
+                  malé rituály, které vám ukážou, jak snadné je najít klid a
+                  energii, aniž byste museli utéct na odlehlý ostrov. Vaše mysl
+                  i tělo vám poděkují!
+                </p>
+                <a href="/tydenni-plan.pdf" className="button" target="_blank">
+                  Stáhnout plán zdarma
+                </a>
+              </div>
             </div>
             <div className="grid-rightBox">
               <img

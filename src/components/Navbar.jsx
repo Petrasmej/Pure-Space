@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import logoImg from "../assets/logo.svg";
-import pureSpacemImg from "../assets/PureSpace.svg";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import logoImg from '../assets/logo.svg';
+import pureSpacemImg from '../assets/PureSpace.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-   // Sledování změn velikosti okna
-   useEffect(() => {
+  // Sledování změn velikosti okna
+  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
@@ -17,8 +17,8 @@ const Navbar = () => {
     };
     handleResize(); // Spustit ihned při načtení
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -31,13 +31,14 @@ const Navbar = () => {
           </a>
         </div>
 
-         
-         {!isMobile && (
+        {!isMobile && (
           <nav className="nav-right">
             <Link to="/TBA">Digitální Detox</Link>
             <Link to="/Mindfulness">Mindfulness</Link>
-            <Link to="/TBA">Kontakt</Link>
-            <Link to="/TBA" className="button">E-BOOK</Link>
+            <a href="#kontakt"> Kontakt</a>
+            <Link to="/TBA" className="button">
+              E-BOOK
+            </Link>
           </nav>
         )}
 
@@ -54,10 +55,18 @@ const Navbar = () => {
       {/* Dropdown menu pro mobilní verzi */}
       {isOpen && isMobile && (
         <nav className="mobile-menu">
-          <Link to="/TBA" onClick={() => setIsOpen(false)}>Digitální Detox</Link>
-          <Link to="/Mindfulness" onClick={() => setIsOpen(false)}>Mindfulness</Link>
-          <Link to="/TBA" onClick={() => setIsOpen(false)}>Kontakt</Link>
-          <Link to="/TBA" className="button" onClick={() => setIsOpen(false)}>E-BOOK</Link>
+          <Link to="/TBA" onClick={() => setIsOpen(false)}>
+            Digitální Detox
+          </Link>
+          <Link to="/Mindfulness" onClick={() => setIsOpen(false)}>
+            Mindfulness
+          </Link>
+          <Link to="/TBA" onClick={() => setIsOpen(false)}>
+            Kontakt
+          </Link>
+          <Link to="/TBA" className="button" onClick={() => setIsOpen(false)}>
+            E-BOOK
+          </Link>
         </nav>
       )}
     </header>

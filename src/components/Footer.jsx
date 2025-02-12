@@ -1,5 +1,5 @@
-import logoBlueImg from "../assets/logoBlue.svg";
-import instagramImg from "../assets/instagram.svg";
+import logoBlueImg from '../assets/logoBlue.svg';
+import instagramImg from '../assets/instagram.svg';
 
 const Footer = () => {
   return (
@@ -12,13 +12,15 @@ const Footer = () => {
           <div className="text-block">Pure Space</div>
         </div>
         <div id="kontakt" className="kontakt-block">
-          <p>Kontakt</p>
+          <p className="kontakt">Kontakt</p>
           <a href="#" className="instagram">
             <img src={instagramImg} loading="lazy" alt="Instagram logo" />
           </a>
         </div>
       </div>
-      <div className="copyright">© 2024 Pure Space. Všechna práva vyhrazena.</div>
+      <div className="copyright">
+        © 2024 Pure Space. Všechna práva vyhrazena.
+      </div>
     </footer>
   );
 };
