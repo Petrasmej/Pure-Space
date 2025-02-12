@@ -203,7 +203,7 @@ const Mindfulness = () => {
               </h3>
               <p className="card-text">
                 Mindfulness je dovednost, kterou si vybudujete časem. Nezáleží
-                na tom, jak "dobří" jste hned na začátku. Pokud vaše mysl
+                na tom, jak dobří jste hned na začátku. Pokud vaše mysl
                 zabloudí, je to normální – stačí si to uv2domit, nehodnotit, jen
                 ji jemně vrátit k přítomnému okamžiku. Buďte trpěliví a laskaví
                 sami na sebe.
@@ -233,7 +233,7 @@ const Mindfulness = () => {
               <p className="card-text">
                 Zkuste si každý den vyhradit několik minut, kdy se soustředíte
                 pouze na přítomnost – ať už je to během meditace nebo při nějaké
-                každodenní činnosti. I kdzyž se vám nebude chtít, zkuste to
+                každodenní činnosti. I když se vám nebude chtít, zkuste to
                 alespoň na chvíli. Čím častěji budete praxi opakovat, tím
                 přirozenější se stane.
               </p>

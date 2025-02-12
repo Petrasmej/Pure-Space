@@ -123,7 +123,7 @@ const Home = () => {
               <h2>Vyzkoušejte ještě dnes! </h2>
               <div className="test-joga">
                 <h3>Máš 15 minut? Odpočiň si s joga nidrou.</h3>
-                <AudioPlayer src="/audio/Joga Nidra.m4a" title="Jóga Nidra" />
+                <AudioPlayer />
               </div>
               <div className="test">
                 <h3>Týdenní plán pro digitální detox</h3>
