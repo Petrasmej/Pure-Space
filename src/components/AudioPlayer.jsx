@@ -28,7 +28,7 @@ const AudioPlayer = () => {
       <button className="button" onClick={isPlaying ? pauseAudio : playAudio}>
         {isPlaying ? '⏸ Zastavit' : '▶ Přehrát'}
       </button>
-      <audio ref={audioRef} preload="auto">
+      <audio ref={audioRef} preload="auto" muted>
         <source src="/JogaNidra.mp3" type="audio/mpeg" />
         <source src="/joga-nidra.m4a" type="audio/mp4" />
         Váš prohlížeč nepodporuje tento formát.
