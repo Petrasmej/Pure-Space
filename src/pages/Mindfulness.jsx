@@ -5,7 +5,7 @@ import MeditationList from '../components/MeditationList';
 import mindfulnessImg from '../assets/mindfulness.jpg';
 import orchidejImg from '../assets/orchidej.jpg';
 import misaImg from '../assets/misa.jpg';
-import logoIcon from '../assets/logo.svg';
+import contentImg from '../assets/contentMindfulness.jpg';
 import meditationImg from '../assets/meditation.jpg';
 
 const Mindfulness = () => {
@@ -64,10 +64,10 @@ const Mindfulness = () => {
             </div>
             <div className="grid-rightBox">
               <img
-                src={logoIcon}
+                src={contentImg}
                 className="obsah-logo"
                 loading="lazy"
-                alt="logo Pure space- kapka vody"
+                alt="štítek Mindfulness"
               />
             </div>
           </div>

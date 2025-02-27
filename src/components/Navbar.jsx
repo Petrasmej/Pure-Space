@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/logo.svg';
-import pureSpacemImg from '../assets/PureSpace.svg';
+import pureSpaceImg from '../assets/PureSpace.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="nav-left">
           <a href="/" className="logo">
             <img src={logoImg} alt="Logo" height="60" />
-            <img src={pureSpacemImg} alt="Pure Space" height="25" />
+            <img src={pureSpaceImg} alt="Pure Space" height="25" />
           </a>
         </div>
 

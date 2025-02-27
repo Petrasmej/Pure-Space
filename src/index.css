@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  font-size: 18px;
 
 }
 
@@ -159,11 +160,11 @@ a {
   margin-top: 5px;
   border-radius: 30px;
   border: 2px solid var(--blue);
-  background: transparent;
+  background: linear-gradient(135deg, #f0f4ff, #D9E2E8);
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   transition: background 0.3s, color 0.3s;
   font-family: 'Mulish', sans-serif;
   color: var(--text);
@@ -175,8 +176,9 @@ a {
 }
 
 .button-hero {
-  color: white;
+  color: var(--text);
   border-color: white;
+  background-color: transparent;
 }
 
 /* ====== HERO SEKCE ====== */
@@ -222,6 +224,45 @@ a {
 
 .info-text {
   text-align: left;
+}
+
+.benefits-h3 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+.points-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #f0f4ff, #D9E2E8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.points:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.points::before {
+  content: "✔";
+  color: var(--blue);
+  font-size: 20px;
+  margin-right: 12px;
 }
 
 
@@ -280,6 +321,8 @@ a {
   margin: 30px auto;
   /* Vycentrování */
 }
+
+
 
 /* ====== PARALLAX ====== */
 
@@ -585,6 +628,13 @@ footer {
   border-radius: 50px;
 }
 
+.obsah-box a::before {
+  content: "★";
+  color: var(--blue);
+  font-size: 20px;
+  margin-right: 12px;
+}
+
 .obsah-box a:hover {
   background-color: var(--blue);
   color: white;
@@ -592,8 +642,9 @@ footer {
 }
 
 .obsah-logo {
-  max-width: 200px;
-  margin-left: 150px;
+  max-width: 600px;
+
+  object-fit: cover;
 }
 
 .klasik {
@@ -809,6 +860,7 @@ footer {
 
   .obsah-grid {
     padding: 60px 20px 0px 10px;
+    display: block;
   }
 
   .klasik {

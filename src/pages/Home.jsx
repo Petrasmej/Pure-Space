@@ -51,6 +51,23 @@ const Home = () => {
               životu může začít právě teď. Objevte náš program Pure Space.
             </strong>
           </p>
+          <div className="points-container">
+            <h3 className="benefits-h3">
+              Jak PureSpace šetří čas, peníze a nervy?
+            </h3>
+            <ul>
+              <li className="points">
+                Šetří čas – Učí efektivní metody, jak si rychle zklidnit mysl.
+              </li>
+              <li className="points">
+                Šetří peníze – Alternativa k drahým terapiím a koučům.
+              </li>
+              <li className="points">
+                Šetří nervy – Pomáhá zvládat emočně náročné situace a vyhnout se
+                vyhoření.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
