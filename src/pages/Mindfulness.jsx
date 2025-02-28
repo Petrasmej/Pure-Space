@@ -152,7 +152,7 @@ const Mindfulness = () => {
             Vyzkoušejte mindfulness a najděte harmonii ve svém každodenním
             životě.
           </h2>
-          <Link to="/TBA" className="button">
+          <Link to="/purespace" className="button">
             Zjistit více o programu Pure Space
           </Link>
         </div>

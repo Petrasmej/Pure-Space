@@ -132,7 +132,7 @@ const Home = () => {
             Harmonie pro vaši mysl – inspirace, jak o sebe pečovat každý den.{' '}
           </h2>
           <Link to="/TBA" className="button">
-            Zjistit více o programu Pure Space
+            Začni s programem Pure Space ještě dnes!
           </Link>
         </div>
       </section>

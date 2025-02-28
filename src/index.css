@@ -89,7 +89,14 @@ a {
 
 .nav-left .logo img {
   margin-right: 10px;
+  transition: transform 0.2s ease;
 }
+
+
+.nav-left .logo img:hover {
+  transform: translateY(-3px)
+}
+
 
 /* Navigace vpravo */
 .nav-right nav {
@@ -102,13 +109,15 @@ a {
   text-decoration: none;
   margin-left: 20px;
   padding: 10px 10px;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s ease;
 }
+
 
 .nav-right a:hover {
   background-color: var(--blue);
   color: white;
   border-radius: 50px;
+  transform: translateY(-3px);
 }
 
 /* Hambuger menu (mobilní verze) */
@@ -160,6 +169,7 @@ a {
   margin-top: 5px;
   border-radius: 30px;
   border: 2px solid var(--blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #f0f4ff, #D9E2E8);
   color: var(--text);
   text-decoration: none;
@@ -168,11 +178,14 @@ a {
   transition: background 0.3s, color 0.3s;
   font-family: 'Mulish', sans-serif;
   color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 
 .button:hover {
   background: var(--blue);
   color: var(--white);
+  transform: translateY(-3px)
 }
 
 .button-hero {
@@ -254,15 +267,10 @@ a {
   border-radius: 12px;
   font-size: 18px;
   font-weight: 600;
-  background: linear-gradient(135deg, #f0f4ff, #D9E2E8);
+  background: var(--background-meditation1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.point:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
 
 .point::before {
   content: "✔";
@@ -442,6 +450,25 @@ footer {
   align-items: center;
   gap: 20px;
 }
+
+.link-block {
+  transition: transform 0.2s ease;
+}
+
+.link-block:hover {
+  transform: translateY(-3px);
+}
+
+
+.instagram {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instagram:hover {
+  transform: translateY(-3px);
+
+}
+
 
 
 .kontakt-block {
@@ -759,7 +786,14 @@ footer {
   background: none;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
+
+
+.toggle-btn:hover {
+  transform: translateY(-3px)
+}
+
 
 .toggle-icon {
   width: 75px;
@@ -929,12 +963,38 @@ footer {
 /* ====== PURE SPACE ====== */
 
 .PS-hero {
-  background-image: url("../notes.jpg");
+  background-image: url("../public/sunset.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text);
+}
+
+
+
+.h1purespace,
+h2purespace {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.PS-parallax {
+  width: 100%;
+  height: 60vh;
+  /* Výška na 50% viewportu */
+  background: url("../public/birds.jpg") center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
