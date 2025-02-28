@@ -23,32 +23,37 @@ const Mindfulness = () => {
               že{' '}
               <strong>
                 pravidelná praxe mindfulness snižuje stres, zlepšuje koncentraci
-                a mění strukturu mozku
+                a podporuje psychickou pohodu a celkové zdraví.{' '}
               </strong>{' '}
-              – zvyšuje hustotu šedé hmoty v oblastech odpovědných za paměť a
-              emoce a snižuje aktivitu amygdaly, čímž pomáhá regulovat úzkost.{' '}
-              <strong>
-                Mindfulness snižuje hladinu kortizolu, zlepšuje imunitu a
-                podporuje psychickou pohodu a celkové zdraví.
-              </strong>{' '}
-              Stačí pár minut denně, žádné speciální vybavení – jen dech,
-              pozornost a ochota zpomalit.
+              <span className="more-text">Více...</span>
+              <span className="hidden-text">
+                Mindfulness mění strukturu mozku – zvyšuje hustotu šedé hmoty v
+                oblastech odpovědných za paměť a emoce a snižuje aktivitu
+                amygdaly, čímž pomáhá regulovat úzkost.{' '}
+                <strong>
+                  Mindfulness snižuje hladinu kortizolu, zlepšuje imunitu a
+                  podporuje psychickou pohodu a celkové zdraví.
+                </strong>{' '}
+                Stačí pár minut denně, žádné speciální vybavení – jen dech,
+                pozornost a ochota zpomalit.
+              </span>
             </p>
             <h3 className="h3grey"> Co je mindfulness?</h3>
-            <p className="info-text">
-              <strong>
-                Mindfulness (neboli vědomá pozornost) je stav,kdy se soustředíme
-                na přítomný okamžik s otevřeností, bez hodnocení a v
-                přítomnosti.
-              </strong>{' '}
-              Jde o schopnost plně si uvědomovat, co se děje v našem těle, mysli
-              a okolí právě teď. <strong>Mindfulness je pro každého</strong>,
-              nezávisle na tom, z jaké kultury pochází nebo jaký systém víry či
-              náboženství vyznává. Projevuje se jak v meditaci, tak v běžných
-              každodenních činnostech. V praxi jde o to, že se učíme být více
-              tady a teď, místo abychom byli zahlceni myšlenkami o minulosti
-              nebo budoucnosti. Díky tomu dovedeme lépe zvládat každodenní výzvy
-              s větší lehkostí, klidem i efektivitou.
+            <p className="info-text toggle-text">
+              Mindfulness (neboli vědomá pozornost) je stav, kdy se soustředíme
+              na přítomný okamžik s otevřeností, bez hodnocení a v přítomnosti.{' '}
+              <span className="more-text">Více...</span>
+              <span className="hidden-text">
+                Jde o schopnost plně si uvědomovat, co se děje v našem těle,
+                mysli a okolí právě teď.{' '}
+                <strong>Mindfulness je pro každého</strong>, nezávisle na tom, z
+                jaké kultury pochází nebo jaký systém víry či náboženství
+                vyznává. Projevuje se jak v meditaci, tak v běžných každodenních
+                činnostech. V praxi jde o to, že se učíme být více tady a teď,
+                místo abychom byli zahlceni myšlenkami o minulosti nebo
+                budoucnosti. Díky tomu dovedeme lépe zvládat každodenní výzvy s
+                větší lehkostí, klidem i efektivitou.
+              </span>
             </p>
           </div>
         </div>
@@ -113,11 +118,11 @@ const Mindfulness = () => {
                 </li>
                 <li>
                   <strong>Pokud chcete posílit empatii a laskavost:</strong>{' '}
-                  &nbsp; Metta meditace
+                  &nbsp; Loving-kindness meditace
                 </li>
                 <li>
                   <strong>Pokud máte potíže se soustředěním: </strong>{' '}
-                  &nbsp;Trátak, Mantra meditace, Sata Nama
+                  &nbsp;Mantra meditace
                 </li>
                 <li>
                   <strong>Pokud potřebujete uvolnit emoce pohybem: </strong>

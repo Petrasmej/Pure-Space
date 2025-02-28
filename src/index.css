@@ -241,8 +241,14 @@ a {
 }
 
 .points {
+  padding-left: 0;
+}
+
+.point {
   display: flex;
   align-items: center;
+  justify-content: left;
+  text-align: left;
   padding: 12px 18px;
   margin-bottom: 15px;
   border-radius: 12px;
@@ -253,12 +259,12 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.points:hover {
+.point:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.points::before {
+.point::before {
   content: "✔";
   color: var(--blue);
   font-size: 20px;
@@ -450,6 +456,7 @@ footer {
 .copyright {
   text-align: center;
   font-size: 13px;
+  margin-top: 50px;
 }
 
 /* ====== RESPONSIVITA ====== */
@@ -596,6 +603,24 @@ footer {
   padding: 20px 30px;
   border-radius: 15px;
 }
+
+
+.more-text {
+  color: var(--blue);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hidden-text {
+  display: none;
+  /* Skrytý text ve výchozím stavu */
+}
+
+.info-text:hover .hidden-text {
+  display: inline;
+  /* Zobrazí text při najetí myší */
+}
+
 
 .h3grey {
   color: var(--text);
@@ -897,4 +922,19 @@ footer {
   .grid-leftBox {
     padding-top: 20px;
   }
+}
+
+
+
+/* ====== PURE SPACE ====== */
+
+.PS-hero {
+  background-image: url("../notes.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
 }

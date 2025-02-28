@@ -131,7 +131,7 @@ const meditationTypes = [
     longDesc: (
       <>
         <div>
-          <p className="headlineMedit">Sata Nama meditace</p>
+          <p className="headlineMedit">Sa Ta Na Ma meditace</p>
           <p>12 minut denně.</p>
           <p>
             Opakování mantry „Sa Ta Na Ma“ spojené s pohybem prstů (mudry).
@@ -196,7 +196,7 @@ const meditationTypes = [
     ),
   },
   {
-    title: 'Loving-kindness',
+    title: 'Loving-kindness meditace',
     shortDesc: (
       <>
         <p>
