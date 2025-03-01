@@ -170,29 +170,48 @@ a {
   border-radius: 30px;
   border: 2px solid var(--blue);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #f0f4ff, #D9E2E8);
-  color: var(--text);
+  background: var(--blue);
+  color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   transition: background 0.3s, color 0.3s;
   font-family: 'Mulish', sans-serif;
-  color: var(--text);
+
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .button:hover {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--white);
+  color: var(--blue);
   transform: translateY(-3px)
 }
 
 .button-hero {
-  color: var(--text);
+  color: var(--white);
   border-color: white;
   background-color: transparent;
 }
+
+#button-nav {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 30px;
+  border: 2px solid var(--blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Mulish', sans-serif;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 
 /* ====== HERO SEKCE ====== */
 .hero {
@@ -267,7 +286,7 @@ a {
   border-radius: 12px;
   font-size: 18px;
   font-weight: 600;
-  background: var(--background-meditation1);
+  background: linear-gradient(135deg, #f0f4ff, #D9E2E8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

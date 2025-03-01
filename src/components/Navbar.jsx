@@ -36,8 +36,8 @@ const Navbar = () => {
             <Link to="/TBA">Digitální Detox</Link>
             <Link to="/Mindfulness">Mindfulness</Link>
             <a href="#kontakt"> Kontakt</a>
-            <Link to="/TBA" className="button">
-              E-BOOK
+            <Link to="/purespace" className="button" id="button-nav">
+              Pure Space
             </Link>
           </nav>
         )}

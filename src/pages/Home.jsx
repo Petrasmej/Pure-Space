@@ -23,7 +23,7 @@ const Home = () => {
         </video>
         <div className="hero-text">
           <h1>Najděte svůj vnitřní klid</h1>
-          <Link to="/TBA" className="button button-hero">
+          <Link to="/purespace" className="button button-hero">
             Zjistit více o programu Pure Space
           </Link>
         </div>
@@ -131,7 +131,7 @@ const Home = () => {
           <h2>
             Harmonie pro vaši mysl – inspirace, jak o sebe pečovat každý den.{' '}
           </h2>
-          <Link to="/TBA" className="button">
+          <Link to="/purespace" className="button">
             Začni s programem Pure Space ještě dnes!
           </Link>
         </div>
