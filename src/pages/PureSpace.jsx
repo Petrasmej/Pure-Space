@@ -89,6 +89,16 @@ const PureSpace = () => {
           </Link>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <p className="info-text">
+            PureSpace je podpůrný vzdělávací program zaměřený na duševní pohodu.
+            Nenahrazuje lékařskou ani psychoterapeutickou péči. V případě
+            závažných psychických či fyzických obtíží se prosím obraťte na svého
+            lékaře
+          </p>{' '}
+        </div>
+      </section>
 
       <Footer />
     </>
