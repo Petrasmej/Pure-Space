@@ -148,7 +148,7 @@ const Home = () => {
               </div>
               <div className="test">
                 <h3>Týdenní plán pro digitální detox</h3>
-                <p>
+                <p className="DD-text">
                   Digitální detox nám pomáhá znovu získat kontrolu nad tím, co
                   nás ovlivňuje. Jakmile ztišíme digitální šum, otevře se nám
                   prostor pro hlubší propojení s námi samotnými. Zpomalte na

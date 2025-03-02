@@ -86,7 +86,7 @@ const Mindfulness = () => {
             <strong>
               Vyberte si oblast, která vás zajímá, a objevte různé praktiky,
               které můžete začlenit do svého života.
-            </strong>
+            </strong>{' '}
             Mindfulness zahrnuje široké spektrum praktik, které pomáhají
             posilovat pozornost, regulovat emoce a snižovat stres. Můžete si
             vybrat, co vám nejlépe vyhovuje – od meditace přes pohyb až po běžné
@@ -209,7 +209,7 @@ const Mindfulness = () => {
               <p className="card-text">
                 Mindfulness je dovednost, kterou si vybudujete časem. Nezáleží
                 na tom, jak dobří jste hned na začátku. Pokud vaše mysl
-                zabloudí, je to normální – stačí si to uv2domit, nehodnotit, jen
+                zabloudí, je to normální – stačí si to uvědomit, nehodnotit, jen
                 ji jemně vrátit k přítomnému okamžiku. Buďte trpěliví a laskaví
                 sami na sebe.
               </p>

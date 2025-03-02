@@ -35,8 +35,8 @@ const PureSpace = () => {
             </ul>
           </div>
           <h3 className="text-center">
-            Pokud jsi odpověděl/a ANO, nebuď na to sám, PureSpace je tu právě
-            pro tebe.
+            Pokud jsi odpověděl/a ANO, nebuď na to sám/sama, PureSpace je tu
+            právě pro tebe.
           </h3>
           <h2 className="benefits-h3">Co je Pure Space?</h2>
           <p className="info-text">
@@ -91,11 +91,11 @@ const PureSpace = () => {
       </section>
       <section>
         <div className="container">
-          <p className="info-text">
+          <p className="law">
             PureSpace je podpůrný vzdělávací program zaměřený na duševní pohodu.
             Nenahrazuje lékařskou ani psychoterapeutickou péči. V případě
             závažných psychických či fyzických obtíží se prosím obraťte na svého
-            lékaře
+            lékaře.
           </p>{' '}
         </div>
       </section>
