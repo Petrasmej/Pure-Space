@@ -150,16 +150,12 @@ const Home = () => {
                 <h3>Týdenní plán pro digitální detox</h3>
                 <p className="DD-text">
                   Digitální detox nám pomáhá znovu získat kontrolu nad tím, co
-                  nás ovlivňuje. Jakmile ztišíme digitální šum, otevře se nám
-                  prostor pro hlubší propojení s námi samotnými. Zpomalte na
-                  pouhý týden a najděte rovnováhu ve svém životě. Pojďme si
-                  spolu vytvořit týdenní plán digitálního detoxu, který je
-                  navržen tak, aby vám pomohl ulevit od stresu, osvobodit se od
-                  závislosti na technologiích a znovu objevit radost z
-                  přítomného okamžiku. Každý den vás čekají jednoduché úkoly a
-                  malé rituály, které vám ukážou, jak snadné je najít klid a
-                  energii, aniž byste museli utéct na odlehlý ostrov. Vaše mysl
-                  i tělo vám poděkují!
+                  nás ovlivňuje. Zpomalte na pouhý týden a najděte rovnováhu ve
+                  svém životě. Pojďme si spolu vytvořit týdenní plán digitálního
+                  detoxu, který je navržen tak, aby vám pomohl ulevit od stresu,
+                  osvobodit se od závislosti na technologiích a znovu objevit
+                  radost z přítomného okamžiku. Každý den vás čekají jednoduché
+                  úkoly. Vaše mysl vám poděkuje!
                 </p>
                 <a href="/tydenni-plan.pdf" className="button" target="_blank">
                   Stáhnout plán zdarma
