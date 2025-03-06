@@ -46,11 +46,11 @@ const PureSpace = () => {
             <strong>zklidnit, soustředit a zvládnout stres</strong>. Osvědčené
             strategie pro{' '}
             <strong>dlouhodobou psychickou i fyzickou odolnost</strong> zaměřené
-            na vědecky podložené mindfulness a denní rituály na základě tisíce
-            let prověřené ajurvedy jako kotvy v každodenním shonu. Digitální
-            detox, aby nás technologie nevyčerpávaly.{' '}
+            na vědecky podložené mindfulness techniky a denní rituály na základě
+            tisíce let prověřené ajurvedy jako kotvy v každodenním shonu.
+            Digitální detox, aby nás technologie nevyčerpávaly.{' '}
             <strong>Jasné návody, které zvládne každý</strong>, žádné složité
-            teorie. Kombinace digitálního detoxu, mindfulness a ajurvédských
+            teorie. Kombinace digitálního minimalismu, mindfulness a malých
             rituálů nabízí ucelený wellness přístup ke zvládání stresu a
             nalezení rovnováhy v dnešním chaotickém světě.
           </p>
