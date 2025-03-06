@@ -1,16 +1,13 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
 import AudioPlayer from '../components/AudioPlayer';
 import benefitsImg from '../assets/benefits-min.png';
 import iphoneImg from '../assets/iphone.jpg';
 import meditationImg from '../assets/meditation.jpg';
 import teaLevanderImg from '../assets/teaLevander.jpg';
 import mobileMockupImg from '../assets/mobileMockup-min.png';
-import snihKvetImg from '../assets/snihKvet.jpg';
-import yogaImg from '../assets/yoga.jpg';
-import teaCupsImg from '../assets/teaCups.jpg';
-import skyImg from '../assets/sky.jpg';
 
 const Home = () => {
   return (
@@ -174,14 +171,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="gallery">
-        <div className="gallery-wrapper">
-          <img src={teaCupsImg} loading="lazy" alt="Šálek čaje" />
-          <img src={snihKvetImg} loading="lazy" alt="Západ slunce" />
-          <img src={yogaImg} loading="lazy" alt="joginka" />
-          <img src={skyImg} loading="lazy" alt="Přírodní scenérie" />
-        </div>
-      </section>
+      <Gallery />
 
       <Footer />
     </>

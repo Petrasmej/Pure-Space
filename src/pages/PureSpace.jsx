@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
 import { Link } from 'react-router-dom';
 
 const PureSpace = () => {
@@ -99,6 +100,8 @@ const PureSpace = () => {
           </p>{' '}
         </div>
       </section>
+
+      <Gallery />
 
       <Footer />
     </>

@@ -428,6 +428,14 @@ a {
 
 
 /* ====== GALERIE ====== */
+
+.instaBox {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
 .gallery {
   padding: 100px 0 0;
   width: 100%;
@@ -704,6 +712,8 @@ footer {
   color: var(--text);
 }
 
+
+
 .obsah-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -722,7 +732,7 @@ footer {
 .obsah-box a {
   display: inline-block;
   /* Prostor mezi odkazy */
-  text-decoration: none;
+  text-decoration: underline;
   /* Odebrání podtržení */
   font-weight: bold;
   font-size: 1.17em;
@@ -731,12 +741,12 @@ footer {
   border-radius: 50px;
 }
 
-.obsah-box a::before {
+/*.obsah-box a::before {
   content: "★";
   color: var(--blue);
   font-size: 20px;
   margin-right: 12px;
-}
+}*/
 
 .obsah-box a:hover {
   background-color: var(--blue);
