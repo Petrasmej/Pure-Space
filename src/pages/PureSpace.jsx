@@ -50,7 +50,9 @@ const PureSpace = () => {
             let prověřené ajurvedy jako kotvy v každodenním shonu. Digitální
             detox, aby nás technologie nevyčerpávaly.{' '}
             <strong>Jasné návody, které zvládne každý</strong>, žádné složité
-            teorie.
+            teorie. Kombinace digitálního detoxu, mindfulness a ajurvédských
+            rituálů nabízí ucelený wellness přístup ke zvládání stresu a
+            nalezení rovnováhy v dnešním chaotickém světě.
           </p>
           <div className="center">
             <Link to="/TBA" className="button">
